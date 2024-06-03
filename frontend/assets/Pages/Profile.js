@@ -167,16 +167,10 @@ const { isLoading, userToken } = useContext(AuthContext);
                         size={22}
                         color="black"
                       />
-                    <TouchableOpacity
-                           
-                            onPress={() => {
-                              setModalVisible(false);
-                              navigation.navigate("AddReview");
-                            }}
-                          >
+                
 
                       <Text className="text-base">Add Review</Text>
-                      </TouchableOpacity>
+                 
                     </View>
                     <View className="items-center  mx-4">
                       <Feather name="camera" size={22} color="black" />

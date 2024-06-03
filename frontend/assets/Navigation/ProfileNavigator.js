@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Profile from "../Pages/Profile";
 import BusinessRegistration from '../Pages/BusinessRegistration';
 import UserProfileManagement from '../Pages/UserProfileManagement';
-import AddReview from '../Pages/AddReview';
+
 
 
 const Stack = createStackNavigator();
@@ -26,12 +26,12 @@ const ProfileNavigator = () => {
         component={UserProfileManagement}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
+     {/* <Stack.Screen
         name="AddReview"
         component={AddReview}
          options={{ headerShown: false }}
       />
-       {/*<Stack.Screen
+       <Stack.Screen
         name="SearchResults"
         component={SearchResultsScreen}
         options={{ headerShown: false }}
