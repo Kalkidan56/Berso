@@ -39,7 +39,7 @@ const Header = () => {
         style={tw`flex-1`}
         resizeMode="cover"
       >
-        <View style={tw`flex-row items-center p-4 bg-white`}>
+        <View style={tw`flex-row items-center p-4 bg-white top-54`}>
           <Image
             source={require("../../assets/Images/randomlogo.png")}
             style={tw`w-12 h-12`}

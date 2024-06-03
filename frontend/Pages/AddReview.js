@@ -55,7 +55,7 @@ const AddReview = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView style={tw`flex-1 p-4 bg-white`}>
+    <SafeAreaView style={tw`flex-1 p-4  m-3`}>
       <Text style={tw`text-2xl font-bold mb-4`}>Add Review</Text>
 
       <TextInput

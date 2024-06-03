@@ -1,7 +1,7 @@
 import { View, Text, Animated, Easing } from "react-native";
 import React from "react";
 import tw from "twrnc";
-import LineChartComponent from "../../assets/Data/LineChart";
+// import LineChartComponent from "../../assets/Data/LineChart";
 // import { BarChart, Grid } from 'react-native-svg-charts';
 const HomeScreen = () => {
    const data = [
@@ -23,12 +23,7 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <View
-      style={[
-        tw`flex-1 items-center justify-center`,
-        tw`bg-gradient-to-r from-blue-400 to-purple-500`,
-      ]}
-    >
+    <View style={[tw`flex-1 items-center justify-center`, tw`bg-orange-100`]}>
       <Text style={[tw`text-4xl font-bold text-black mb-8`]}>Dashboard</Text>
 
       <Animated.View
@@ -63,12 +58,12 @@ const HomeScreen = () => {
           },
         ]}
       >
-        <Text style={[tw`text-lg font-semibold text-gray-800`]}>
+        <Text style={tw`text-lg font-semibold text-gray-800`}>
           Average Rating: 4.5
         </Text>
       </Animated.View>
       {/* <BarChart
-        style={{ flex: 1 }}
+        style={tw`flex-1`}
         data={data}
         svg={{ fill: "rgba(134, 65, 244, 0.8)" }}
         contentInset={{ top: 20, bottom: 20 }}

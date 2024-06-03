@@ -191,19 +191,28 @@ const fetchUserData = async () => {
                     </View>
                   </View>
                   <View className="flex-row my-7 justify-between items-center">
-                    <View className="items-center mx-4">
-                      <MaterialCommunityIcons
-                        name="comment-edit-outline"
-                        size={22}
-                        color="black"
-                      />
-                      <Text className="text-base">Add Review</Text>
-                    </View>
-                    <View className="items-center  mx-4">
-                      <Feather name="camera" size={22} color="black" />
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate("AddReview")}
+                    >
+                      <View className="items-center mx-4">
+                        <MaterialCommunityIcons
+                          name="comment-edit-outline"
+                          size={22}
+                          color="black"
+                        />
+                        <Text className="text-base">Add Review</Text>
+                      </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      onPress={() => navigation.navigate("UploadPhoto")}
+                    >
+                     
+                      <View className="items-center  mx-4">
+                        <Feather name="camera" size={22} color="black" />
 
-                      <Text className="text-base">Add Photo</Text>
-                    </View>
+                        <Text className="text-base">Add Photo</Text>
+                      </View>
+                    </TouchableOpacity>
                     <TouchableOpacity
                       onPress={() => {
                         // navigation.navigate("AddBusiness");

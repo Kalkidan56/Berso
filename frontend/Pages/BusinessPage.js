@@ -14,6 +14,7 @@ import {
   FontAwesome,
   MaterialCommunityIcons,
   Feather,
+  Fontisto,
 } from "@expo/vector-icons";
 import Animated, {
   useAnimatedStyle,
@@ -126,7 +127,7 @@ const BusinessPage = () => {
           <TouchableOpacity
             style={tw`w-10 h-10 rounded-full justify-center items-center`}
           >
-            <Ionicons name="search-outline" size={24} color={headerIconColor} />
+            <Fontisto name="favorite" size={24} color={headerIconColor} />
           </TouchableOpacity>
         </View>
       ),
@@ -138,7 +139,7 @@ const BusinessPage = () => {
       key={index}
       onPress={() => setActiveTabIndex(index)}
       style={[
-        tw`px-2 py-1 bg-orange-100`,
+        tw`px-3 py-1 bg-orange-100`,
         activeTabIndex === index && tw``,
       ]}
     >
@@ -247,7 +248,7 @@ const BusinessPage = () => {
                   />
                 </View>
               </View>
-              <View className="flex-row mb-7 mt-2 justify-between items-center px-4">
+              <View className="flex-row mb-7 mt-2 justify-between items-center ">
                 <TouchableOpacity
                   onPress={() => {
                     navigation.navigate("AddReview");
@@ -269,7 +270,7 @@ const BusinessPage = () => {
                 >
                   <View className="items-center  mx-2">
                     <Feather name="phone" size={20} color="black" />
-                    <Text className="text-base">Call</Text>
+                    <Text className="text-base">Call Phone</Text>
                   </View>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -318,7 +319,7 @@ const BusinessPage = () => {
         scrollEvent={handleScroll}
       >
         <View style={tw`flex-1 bg-white rounded-t-3xl `}></View>
-        <View style={tw`flex-1 rounded-b-3xl`}>
+        <View style={tw`flex-1 bg-white rounded-b-3xl`}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {dummyPost.allAbout.map((item, index) =>
               renderTabButton(item, index)

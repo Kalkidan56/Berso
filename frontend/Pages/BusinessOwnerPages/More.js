@@ -48,7 +48,7 @@ const More = () => {
               navigation.navigate("Home");
             }}
           >
-            <Entypo name="shop" size={22} color="black" />
+            <FontAwesome name="user-circle-o" size={22} color="black" />
             <Text className="ml-2">Personal Profile</Text>
           </TouchableOpacity>
           <TouchableOpacity
